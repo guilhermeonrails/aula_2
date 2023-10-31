@@ -1,0 +1,12 @@
+version: "3.4"
+
+services:
+  dev-backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - "./src:/src"
+    ports:
+      - "8000:8000"
+      - "4000:4000"
