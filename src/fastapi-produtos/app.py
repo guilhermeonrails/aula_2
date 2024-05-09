@@ -14,9 +14,9 @@ def say_hi(name:str):
     return {'Hello':name}
 
 data = [
-    Product(id=1, name='Tenis Nike Air', description='Calçados', price=1928.99),
-    Product(id=2, name='Iphone', description='Celulares', price=1928.99),
-    Product(id=3, name='Notebook', description='Eletrônicos', price=1928.99),
+    Product(id=1, name='Tenis Nike Air', description='Calçados', price=199.99),
+    Product(id=2, name='Iphone', description='Celulares', price=3928.99),
+    Product(id=3, name='Notebook', description='Eletrônicos', price=4928.97),
 ]
 
 @app.get('/api/products')
