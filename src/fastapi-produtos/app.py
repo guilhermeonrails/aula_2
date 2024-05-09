@@ -22,3 +22,10 @@ data = [
 @app.get('/api/products')
 def get_products():
     return data
+
+@app.get("/api/products/{product_id}")
+def get_product_by_id(product_id: int):
+    for product in data:
+        if product["id"] == product_id:
+            return product
+    return {"message": "Nenhum produto encontrado com o ID fornecido"}
